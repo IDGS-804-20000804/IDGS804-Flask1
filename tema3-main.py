@@ -19,8 +19,12 @@ def edad(edad):
     return "<h1>Tu edad es de {0}!</h1>".format(edad)
 
 @app.route("/username/<int:id>/<string:username>")
-def username(id,username):
+def username(id, username):
     return "<h1>Username: {0} <p>Id: {1}</p>!</h1>".format(username,id)
+
+@app.route("/suma/<float:num1>/<float:num2>")
+def suma(num1, num2):
+    return "<h1>La suma de {0} y {1} es  {2}</h1>".format(num1, num2, num1 + num2)
 
 
 if __name__ == "__main__":
