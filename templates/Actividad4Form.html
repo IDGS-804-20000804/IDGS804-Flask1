@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Ivan Ornelas</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="text-center">Datos Personales</h1>
+    </div>
+    <form class="col-6 mx-auto text-center" action="/resultadoActividad4" method="post">
+      <div class="form-group">
+        <label for="inputNombre">Nombre</label>
+        <input type="text" class="form-control" name="inputNombre" id="inputNombre" placeholder="Nombre">
+      </div>
+      <div class="form-group">
+        <label for="inputAPaterno">A. Paterno</label>
+        <input type="text" class="form-control" name="inputAPaterno" id="inputAPaterno" placeholder="Ap. Materno">
+      </div>
+      <div class="form-group">
+        <label for="inputAMaterno">A. Materno</label>
+        <input type="text" class="form-control" name="inputAMaterno" id="inputAMaterno" placeholder="Ap. Materno">
+      </div>
+      <div class="form-check">
+        <label>Fecha de nacimiento</label>
+      </div>
+      <div class="form-check form-check-inline">
+        <label for="inputDia">Día</label>
+        <input type="number" class="form-control" name="inputDia" id="inputDia" placeholder="Día">
+      </div>
+      <div class="form-check form-check-inline">
+        <label for="inputMes">Mes</label>
+        <input type="number" class="form-control" name="inputMes" id="inputMes" placeholder="Mes">
+      </div>
+      <div class="form-check form-check-inline">
+        <label for="inputAnio">Año</label>
+        <input type="number" class="form-control" name="inputAnio" id="inputAnio" placeholder="Año">
+      </div>
+      <div class="col-4 mx-auto">
+        <div class="form-check">
+          <label for="inputSexo">Sexo</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="inputSexo" id="inputSexoM" value="M">
+          <label class="form-check-label" for="inputSexoM">
+            Masculino
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="inputSexo" id="inputSexoF" value="F">
+          <label class="form-check-label" for="inputSexoF">
+            Femenino
+          </label>
+        </div>
+      </div>
+      <input class="btn btn-light" type="submit" name="action" value="Limpiar">
+      <input class="btn btn-light" type="submit" name="action" value="Siguiente">
+    </form>
+  </body>
+</html>

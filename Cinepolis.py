@@ -32,9 +32,9 @@ def resultadosCinepolis():
         else:
             descuento = 0
         subTotal = cantidadBoletas * 12
-        if request.form.get("radioTarjetaCineco") == "true":
-            descuento = descuento + 10
         valorPagar = subTotal * ( (100-descuento)/100 )
+        if request.form.get("radioTarjetaCineco") == "true":
+            valorPagar = valorPagar * 0.9
     return render_template("Cinepolis2.html",
                            nombre = nombre,
                            cantidadCompradores = cantidadCompradores,

@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Ivan Ornelas</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  </head>
+  <body>
+    <form class="col-6 mx-auto text-center" action="/resultadoFinalActividad4" method="post">
+      <div class="col-4 mx-auto">
+        <div class="form-check">
+          <label for="inputTest1">¿Cuál es la suma de 2 + 2?</label>
+        </div>
+        <input class="form-check-input" type="radio" name="inputTest1" id="inputTest1_1" value=2>
+        <label class="form-check-label" for="inputTest1_1">
+          4
+        </label>
+        <input class="form-check-input" type="radio" name="inputTest1" id="inputTest1_2" value=0>
+        <label class="form-check-label" for="inputTest1_2">
+          8
+        </label>
+        <input class="form-check-input" type="radio" name="inputTest1" id="inputTest1_3" value=0>
+        <label class="form-check-label" for="inputTest1_3">
+          6
+        </label>
+        <input class="form-check-input" type="radio" name="inputTest1" id="inputTest1_4" value=0>
+        <label class="form-check-label" for="inputTest1_4">
+          10
+        </label>
+      </div>
+
+
+      <div class="col-4 mx-auto">
+        <div class="form-check">
+          <label for="inputTest2">¿Cuál es la suma de 2 / 2?</label>
+        </div>
+        <input class="form-check-input" type="radio" name="inputTest2" id="inputTest2_1" value=0>
+        <label class="form-check-label" for="inputTest2_1">
+          4
+        </label>
+        <input class="form-check-input" type="radio" name="inputTest2" id="inputTest2_2" value=2>
+        <label class="form-check-label" for="inputTest2_2">
+          1
+        </label>
+        <input class="form-check-input" type="radio" name="inputTest2" id="inputTest2_3" value=0>
+        <label class="form-check-label" for="inputTest2_3">
+          5
+        </label>
+        <input class="form-check-input" type="radio" name="inputTest2" id="inputTest2_4" value=0>
+        <label class="form-check-label" for="inputTest2_4">
+          3
+        </label>
+      </div>
+
+      <div class="col-4 mx-auto">
+        <div class="form-check">
+          <label for="inputTest3">¿Cuál es la suma de 2 * 2?</label>
+        </div>
+        <input class="form-check-input" type="radio" name="inputTest3" id="inputTest3_1" value=0>
+        <label class="form-check-label" for="inputTest3_1">
+          3
+        </label>
+        <input class="form-check-input" type="radio" name="inputTest3" id="inputTest3_2" value=0>
+        <label class="form-check-label" for="inputTest3_2">
+          8
+        </label>
+        <input class="form-check-input" type="radio" name="inputTest3" id="inputTest3_3" value=2>
+        <label class="form-check-label" for="inputTest3_3">
+          4
+        </label>
+        <input class="form-check-input" type="radio" name="inputTest3" id="inputTest3_4" value=0>
+        <label class="form-check-label" for="inputTest3_4">
+          7
+        </label>
+      </div>
+
+      <div class="col-4 mx-auto">
+        <div class="form-check">
+          <label for="inputTest4">¿Cuál es la suma de 2 ^ 2?</label>
+        </div>
+        <input class="form-check-input" type="radio" name="inputTest4" id="inputTest4_1" value=0>
+        <label class="form-check-label" for="inputTest4_1">
+          1
+        </label>
+        <input class="form-check-input" type="radio" name="inputTest4" id="inputTest4_2" value=0>
+        <label class="form-check-label" for="inputTest4_2">
+          3
+        </label>
+        <input class="form-check-input" type="radio" name="inputTest4" id="inputTest4_3" value=0>
+        <label class="form-check-label" for="inputTest4_3">
+          6
+        </label>
+        <input class="form-check-input" type="radio" name="inputTest4" id="inputTest4_4" value=2>
+        <label class="form-check-label" for="inputTest4_4">
+          4
+        </label>
+      </div>
+
+
+      <div class="col-4 mx-auto">
+        <div class="form-check">
+          <label for="inputTest5">¿Cuál es la suma de 2 - 2?</label>
+        </div>
+        <input class="form-check-input" type="radio" name="inputTest5" id="inputTest5_1" value=2>
+        <label class="form-check-label" for="inputTest5_1">
+          0
+        </label>
+        <input class="form-check-input" type="radio" name="inputTest5" id="inputTest5_2" value=0>
+        <label class="form-check-label" for="inputTest5_2">
+          3
+        </label>
+        <input class="form-check-input" type="radio" name="inputTest5" id="inputTest5_3" value=0>
+        <label class="form-check-label" for="inputTest5_3">
+          6
+        </label>
+        <input class="form-check-input" type="radio" name="inputTest5" id="inputTest5_4" value=0>
+        <label class="form-check-label" for="inputTest5_4">
+          9
+        </label>
+      </div>
+
+
+      
+      <input type="hidden" name="inputSexo" id="inputSexo" value="{{sexo}}">
+      <input type="hidden" name="inputNombre" id="inputNombre" value="{{nombre}}">
+      <input type="hidden" name="inputAMaterno" id="inputAMaterno" value="{{aMaterno}}">
+      <input type="hidden" name="inputAPaterno" id="inputAPaterno" value="{{aPaterno}}">
+      <input type="hidden" name="inputDia" id="inputDia" value="{{dia}}">
+      <input type="hidden" name="inputMes" id="inputMes" value="{{mes}}">
+      <input type="hidden" name="inputAnio" id="inputAnio" value="{{anio}}">
+      <input class="btn btn-light" type="submit" name="action" value="Siguiente">
+    </form>
+  </body>
+</html>
